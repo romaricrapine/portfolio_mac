@@ -1,0 +1,11 @@
+{% extends '@EasyAdmin/layout.html.twig' %}
+
+{% block content %}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Administration du Portfolio</h1>
+        <p class="lead">Bienvenue {{ ea.userMenu.name }} dans l'interface d'administration de votre Portfolio.</p>
+        <p class="lead">Retourner sur le portfolio cliquez <a href="{{ path('app_home_user') }}">ICI</a></p>
+    </div>
+
+{% endblock %}
