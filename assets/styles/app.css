@@ -18,3 +18,8 @@ a {
 footer {
     padding-bottom: 1.5rem;
 }
+
+.grecaptcha-badge {
+    margin-bottom: 20px;
+    position: unset !important;
+}
