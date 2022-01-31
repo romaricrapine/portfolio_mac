@@ -429,7 +429,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 text-center">
-                                                    <button type="submit" class="button button-a button-big button-rouded">Envoyer le Message</button>
+                                                    <button type="submit" class="button button-a button-big button-rouded g-recaptcha"
+                                                            data-sitekey="6LfGikIeAAAAAE_TdGd1YCSIorHilg6Rm_MKLqxS"
+                                                            data-callback='onSubmit'
+                                                            data-action='submit'>
+                                                            Envoyer le Message
+                                                    </button>
                                                 </div>
                                             </div>
                                         {{ form_end(contact) }}
@@ -516,6 +521,13 @@
     <a href="#" class="back-to-top">
         <i class="fa fa-chevron-up"></i>
     </a>
-    {# <div id="preloader"></div> #}
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
 
 {% endblock %}

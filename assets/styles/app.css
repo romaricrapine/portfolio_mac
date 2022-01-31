@@ -1,3 +1,20 @@
 body {
     background-color: lightgray;
 }
+
+.portfolio-info {
+    background-color: white;
+    word-break: break-word;
+}
+
+a {
+    color: #001FA6;
+}
+
+.portfolio-details .portfolio-details-slider img {
+    width: 95%;
+}
+
+footer {
+    padding-bottom: 1.5rem;
+}
